@@ -6,7 +6,7 @@
 <meta name="description" content="Dream Lights — association culturelle franco-tunisienne dédiée au cinéma, aux rencontres et au dialogue entre les cultures.">
 <title>Dream Lights | Association culturelle et cinéma tunisien</title>
 <style>
-:root{  --black: #5A4A42--panel: #FFFAF6;--gold: #D4AF37 --pink: #F7C8D9;--beige: #FDF1E6;
+:root{--black:#090909;--panel:#141414;--gold:#d6b46a;--gold2:#f0d99b;--white:#f7f3e9;--muted:#b9b3a6;--line:#393226}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.96);backdrop-filter:blur(12px);border-bottom:1px solid #ffffff14}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;letter-spacing:.18em;font-size:14px;font-weight:800}.brand-logo{width:48px;height:48px;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}.monogram{width:43px;height:43px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:18px;letter-spacing:0;transform:rotate(0deg)}nav{display:flex;align-items:center;gap:20px}nav a{text-decoration:none;color:#e5dfd2;font-size:13px}nav a:hover{color:var(--gold)}.lang{display:flex;gap:5px}.lang button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:7px 8px;cursor:pointer;font-size:11px}.lang button.active,.lang button:hover{color:var(--black);background:var(--gold);border-color:var(--gold)}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border:1px solid var(--gold);color:var(--black);background:var(--gold);text-decoration:none;text-transform:uppercase;letter-spacing:.09em;font-size:11px;font-weight:800;transition:.2s}.btn:hover{background:var(--gold2);transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--gold)}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.25em;text-transform:uppercase;font-weight:bold}
@@ -16,6 +16,35 @@ section{padding:88px 0}.section-head{max-width:740px;margin-bottom:38px}.section
 footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:12px}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}.foot p{margin:0}.foot a{color:var(--gold);text-decoration:none}
 [dir="rtl"] body,[dir="rtl"]{font-family:Tahoma,Arial,sans-serif} [dir="rtl"] .hero-content,[dir="rtl"] .section-head,[dir="rtl"] .card,[dir="rtl"] .feature,[dir="rtl"] .contact-card{text-align:right}[dir="rtl"] .hero:after{right:auto;left:-100px}[dir="rtl"] .step{grid-template-columns:1fr 44px}[dir="rtl"] .step-num{grid-column:2;grid-row:1}[dir="rtl"] .step>div:last-child{grid-column:1;grid-row:1}
 @media(max-width:850px){nav{gap:10px}nav>a:not(.contact-nav){display:none}.hero{min-height:570px}.hero:after{width:300px;height:300px;right:-140px}.grid{grid-template-columns:1fr}.two-col,.contact-grid{grid-template-columns:1fr;gap:28px}.events{grid-template-columns:1fr;padding:27px}section{padding:65px 0}.foot{align-items:flex-start;flex-direction:column}}
+
+/* Palette douce Dream Lights : crème, beige, rose poudré et doré */
+:root{--black:#5a4a42;--panel:#fffaf6;--gold:#d4af37;--gold2:#ead7a0;--white:#5a4a42;--muted:#786b64;--line:#eaded5}
+body{background:#fffaf6;color:#5a4a42}
+header{background:rgba(255,250,246,.96);border-bottom:1px solid #eaded5;color:#5a4a42}
+nav a{color:#5a4a42} nav a:hover{color:#c98278}
+.brand-logo{border-color:#d4af37}
+.monogram{border-color:#d4af37;color:#b98d25}
+.lang button{color:#786b64;border-color:#eaded5}
+.lang button.active,.lang button:hover{color:#5a4a42;background:#f7c8d9;border-color:#f7c8d9}
+.btn{border-color:#d4af37;color:#5a4a42;background:#ead7a0}
+.btn:hover{background:#f7c8d9}
+.btn.secondary{background:transparent;color:#b98075;border-color:#c98278}
+.hero{background:linear-gradient(90deg,rgba(255,250,246,.98) 0%,rgba(255,250,246,.87) 53%,rgba(255,250,246,.35) 100%),radial-gradient(ellipse at 78% 42%,#f7c8d9 0%,#fdf1e6 34%,#fffaf6 70%);color:#5a4a42}
+.hero h1 em,.eyebrow{color:#c98278}
+.hero p{color:#786b64}.hero-note{border-color:#d4af3766;color:#786b64}
+.grid .card{background:linear-gradient(145deg,#fffdfb,#fdf1e6);border-color:#eaded5}
+.card .symbol{color:#c98278}.card p{color:#786b64}
+.feature{border-color:#e8d7ad;background:linear-gradient(140deg,#fdf1e6,#fffaf6)}
+.feature:before{color:#d4af3712}.feature p{color:#786b64}
+.events{background:linear-gradient(110deg,#fdf1e6,#fffaf6);border-color:#eaded5}
+.events p{color:#786b64}
+.contact-card{border-color:#eaded5;background:#fffdfb}
+.contact-card p{color:#786b64}.mail{color:#b98075}
+.socials a{border-color:#eaded5;color:#b98075}.socials a:hover{border-color:#d4af37}
+footer{border-top:1px solid #eaded5;background:#fdf1e6;color:#786b64}
+.foot a{color:#b98075}
+@media(max-width:850px){.hero{background:linear-gradient(90deg,rgba(255,250,246,.96),rgba(255,250,246,.76)),radial-gradient(ellipse at 78% 42%,#f7c8d9,#fffaf6)}}
+
 </style>
 </head>
 <body>
